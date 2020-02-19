@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>VGP Cloth Adjusted</name>
+	<author>Bishop</author>
+	<supportedVersions>
+		<li>1.0</li>
+	</supportedVersions>
+	<url>https://github.com/BishopGit/vgp-cloth-adjusted</url>
+	<description>Remove the OP synthread and hyperweave recipes from VGP garden tools</description>
+</ModMetaData>

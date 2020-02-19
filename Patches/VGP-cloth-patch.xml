@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+
+        <operations>
+            <li Class="ModCheck.isModLoaded">
+                <modName>VGP Garden Fabrics</modName>
+                <yourMod>VGP Cloth Adjusted</yourMod>
+            </li>
+            
+            <!-- Remove OP recipes -->
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[defName="TableLoom"]/recipes/li[5]</xpath>   
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[defName="TableLoom"]/recipes/li[4]</xpath>
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[defName="TableElecLoom"]/recipes/li[5]</xpath>   
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[defName="TableElecLoom"]/recipes/li[4]</xpath>
+            </li>
+            
+            
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ResearchProjectDef[defName="VG_ClothI"]</xpath>
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ResearchProjectDef[defName="VG_ClothII"]</xpath>
+            </li>
+
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/RecipeDef[defName="MakeSynthreadCloth"]</xpath>
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/RecipeDef[defName="MakeHyperweaveCloth"]</xpath>
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/RecipeDef[defName="MakePlasteelThread"]</xpath>
+            </li>
+
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[defName="VG_PlasteelThread"]</xpath>
+            </li>            
+            
+
+        </operations>
+    </Operation>
+
+</Patch>
